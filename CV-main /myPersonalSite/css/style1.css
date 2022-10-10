@@ -1,0 +1,224 @@
+body {
+    background-color: #343a40;
+
+}
+h2{
+    color: #fff;
+    font-size: 4rem;
+}
+button{
+    color: black;
+}
+a{
+    color: #343a40;
+}
+
+.greeting {
+    
+    
+    padding: 7% 15%;
+    
+}
+.greeting h2{
+    padding-left: 0%;
+}
+.profile-pic {
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 35%;
+    width: 70%;
+    border-radius: 10px;
+    transform: rotate(25deg);
+    z-index: -1;
+
+
+}
+
+.column1 {
+    width: 100%;
+
+}
+.logo{
+    width:100%;
+    height:100px;
+}
+.Middle-Container{
+    z-index: 1;
+  
+
+    
+
+}
+.container-m{
+    padding-top:5% ;
+    font-size: 3rem;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+.btn{
+    margin-top: 10%;
+}
+.Bottom-Container{
+    margin-top: 100px;
+    padding-top:5%;
+    padding-bottom: 5%;
+    background-color: #fff;;
+    width: 100%;
+  
+ 
+    
+ 
+}
+.carousel-inner{
+    text-align: center;
+}
+.logo{
+    width:100%;
+}
+.corosel-img{
+    border-radius: 50%;
+    width:40%;
+
+}
+.corosel-item2 h3{
+    /* padding-top: 10%; */
+    padding-bottom: 8%;;
+ 
+}
+.corosel-item2 p{
+    margin-bottom: 0px;
+    font-size: 4.0rem;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-decoration: underline;
+}
+.greeting{
+    text-align: left;
+}
+
+
+@media(max-width:817px) {
+
+    .container-m{
+        text-align: center;
+    }
+    .greeting{
+        text-align: center;
+    }
+
+    .profile-pic {
+        width:70%;
+        text-align: center;
+        margin-left: 100px;
+        position: static;
+        transform: rotate(0);
+        padding-top: 0px;
+        margin-top: 10px;
+      
+    }
+}
+
+@media(max-width:765px) {
+    .skillsrow{
+        padding:100px ;
+
+    }
+    .card{
+        margin-bottom: 50px;;
+    }
+}
+
+/* @media(min-width:1200px){
+    .Bottom-Container{
+        height: 500px;
+    }
+    
+} */
+.Footer{
+    text-align: center;
+    padding: 7% 15%;
+    z-index: 1;
+}
+.icons{
+    padding: 2%;;
+    z-index: 1;
+    color: white;
+}
+.icons:hover{
+    border-radius:10px;
+    color: black;
+    background-color: white;
+    width: 100px;
+}
+
+.dropdown-item:hover{
+    background-color: grey;
+}
+.monevourButton:hover{
+
+    background-color: #343a40;
+    
+}
+.skillsrow{
+    /* border:10px solid blue; */
+    width:100%;
+}
+.pressed{
+    background-color: #343a40 ;
+}
+
+.card{
+    border-radius:5px ;
+    color: black;
+    padding-top:15% ;
+}
+
+.card:hover{
+    background-color:  lightgrey;
+}
+/* .card p{
+  
+    font-size: 10rem;
+} */
+
+
+.card-title,.card-subtitle{
+    font-family: 'Qwitcher Grypen', cursive;
+
+}
+.card-text{
+    font-size: 1.2rem;
+   
+}
+.corosel-slide{
+
+    width:100%;
+
+
+}
+.corosel-item2 p{
+
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card-body{
+    height:250px;
+}
+
+.underline{
+    border:1px dotted white;
+ 
+}
+
+
+h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.card-img-top{
+    text-align: center;
+    width:100%;
+    height:300px;
+}
+

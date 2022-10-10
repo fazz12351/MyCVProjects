@@ -1,0 +1,70 @@
+/******************************************************Tag Selectors********************************/
+body{
+    background-color:#EAF6F6;
+}
+
+hr{
+    border-style:none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width:5px;
+    width:5%;
+}
+
+h1{
+    color:#66BFBF;
+}
+
+h3{
+    color:#66BFBF;
+}
+
+
+
+
+/******************************************************Class Selectors********************************/
+.HeaderPic{
+    width: 100%;
+    height: 0.5%;
+}
+.ProfilePic{
+    border-radius: 50%;
+    width: 90%;
+}
+.ProfilePic:hover{
+    border-radius: 50%;
+    width: 100%;
+}
+
+/******************************************************ID Selectors********************************/
+
+#list1{
+    color: pink;
+}
+
+#list2{
+    color: #F36AEA;
+}
+#list1:hover{
+    color: greenyellow;
+}
+#list2:hover{
+    color: greenyellow;
+}
+#list3{
+    color: pink
+}
+#list3:hover{
+    color: greenyellow;
+}
+#list4{
+     color: #F36AEA;
+}
+#list4:hover{
+    color: greenyellow;
+}
+
+
+
+
+

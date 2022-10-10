@@ -1,0 +1,90 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+.message{
+  text-align: center;
+
+}
+
+.winnerMessage1{
+  color: white;
+  color: white;
+  font-size: 2rem;
+  border:2px solid white;
+  border-radius: 10px;;
+  margin-top:5%;
+  margin-left:15%;
+  margin-right: 15%;
+
+  
+}
+.winnerMessage2{
+  color: white;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  border:2px solid black;
+  border:2px solid;
+  border-radius: 10px;;
+  margin-top:5%;
+  margin-left:15%;
+  margin-right: 15%;
+
+
+  
+}
+
+.drawMessage{
+
+  font-size: 2rem;
+  color: white;
+  border:2px solid orange;
+  border-radius: 10px;;
+  margin-top:5%;
+  margin-left:15%;
+  margin-right: 15%;
+
+}
+.btn{
+  margin-left: 10%;
+}
+
