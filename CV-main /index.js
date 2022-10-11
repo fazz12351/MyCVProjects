@@ -9,7 +9,13 @@ app.get("/",function(req,res){
     res.sendFile(__dirname+"/myPersonalSite/index.html")
 })
 
+app.get("/TinDog",function(req,res){
+    res.sendFile(__dirname+"/public/projects/TinDog/index.html")
+})
+
 app.listen(3000,function(){
     console.log("we are running")
   
 })
+
+
