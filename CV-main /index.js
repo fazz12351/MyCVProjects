@@ -55,6 +55,7 @@ app.get("/projects"+"/WeatherApp",function(req,res){
 
 app.listen(3000,function(){
     console.log("we are running")
+    console.log(" i am a beast")
   
 })
 
