@@ -48,6 +48,12 @@ app.post("/WeatherResponce", function (req, res) {
 
 })
 
+app.get("/updated",function(req,res){
+    res.render("home",{
+        
+    })
+})
+
 
 
 
