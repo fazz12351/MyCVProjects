@@ -7,25 +7,6 @@ function ConnectButton() {
     button.addEventListener("click", function () {
         button.innerHTML = "Great! <i class='fa-regular fa-handshake'></i>"
         button.classList.add("pressed")
-        for (var i = 0; i < footerUnderline.length; i++) {
-            footerUnderline[i].classList.add("underline")
-
-        }
-
-
-
-        setTimeout(function () {
-            button.classList.remove("pressed")
-        }, 100);
-
-
-        setTimeout(function () {
-            for (var j = 0; j < footerUnderline.length; j++) {
-                footerUnderline[j].classList.remove("underline")
-
-            }
-
-        }, 1000);
 
 
     })
@@ -81,3 +62,5 @@ function buttonHover(page) {
 ConnectButton();
 
 buttonHover(1);
+
+console.log("im running")

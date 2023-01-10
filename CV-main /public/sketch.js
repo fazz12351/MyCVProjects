@@ -1,32 +1,13 @@
 let button = document.querySelector(".connectButton");
 let footerUnderline = document.querySelectorAll(".Footer a")
 let objects = document.querySelectorAll(".icons");
+let SocialDropDown = document.querySelector("#navbarDropdown");
 
-
-function ConnectButton() {
+function ButtonPressed() {
     button.addEventListener("click", function () {
         button.innerHTML = "Great! <i class='fa-regular fa-handshake'></i>"
         button.classList.add("pressed")
-        for (var i = 0; i < footerUnderline.length; i++) {
-            footerUnderline[i].classList.add("underline")
-
-        }
-
-
-
-        setTimeout(function () {
-            button.classList.remove("pressed")
-        }, 100);
-
-
-        setTimeout(function () {
-            for (var j = 0; j < footerUnderline.length; j++) {
-                footerUnderline[j].classList.remove("underline")
-
-            }
-
-        }, 1000);
-
+        SocialDropDown.click();
 
     })
 
@@ -78,6 +59,17 @@ function buttonHover(page) {
 
 }
 
-ConnectButton();
+function RemoveStyles() {
+    setTimeout(function () {
+        button.classList.remove("pressed")
+    }, 100);
+
+}
+
+
+ButtonPressed();
 
 buttonHover(1);
+RemoveStyles();
+console.log(SocialDropDown)
+
