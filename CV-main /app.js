@@ -13,7 +13,12 @@ app.set("view engine", "ejs");
 
 
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/myPersonalSite/index.html")
+    // res.sendFile(__dirname + "/myPersonalSite/index.html")
+    res.render("index",{
+
+    });
+
+    
 })
 
 app.get("/WeatherAPI", function (req, res) {

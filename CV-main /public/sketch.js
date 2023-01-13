@@ -8,6 +8,9 @@ function ButtonPressed() {
         button.innerHTML = "Great! <i class='fa-regular fa-handshake'></i>"
         button.classList.add("pressed")
         SocialDropDown.click();
+        setTimeout(function(){
+            button.classList.remove("pressed")
+        },5000)
 
     })
 
@@ -61,6 +64,7 @@ function buttonHover(page) {
 
 function RemoveStyles() {
     setTimeout(function () {
+        console.log("Its being removed")
         button.classList.remove("pressed")
     }, 100);
 
@@ -70,6 +74,6 @@ function RemoveStyles() {
 ButtonPressed();
 
 buttonHover(1);
-RemoveStyles();
+// RemoveStyles();
 console.log(SocialDropDown)
 

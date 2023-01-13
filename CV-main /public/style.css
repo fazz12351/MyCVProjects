@@ -1,7 +1,13 @@
+
+
 body {
-    background-color: #343a40;
+    /* background-color: #343a40; */
+    background-color: #f9e4b7;
+
+    
 
 }
+
 h2{
     color: #fff;
     font-size: 4rem;
@@ -10,7 +16,11 @@ button{
     color: black;
 }
 a{
-    color: #343a40;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:#fff;
 }
 
 .greeting {
@@ -23,73 +33,50 @@ a{
     padding-left: 0%;
 }
 .profile-pic {
+    border: 10px solid white;
     position: absolute;
     margin-left: 0%;
-    margin-top: 35%;
+    
     width: 70%;
     border-radius: 10px;
-    transform: rotate(25deg);
+    /* transform: rotate(25deg); */
     z-index: -1;
+    display: inline-block;
+    margin-top: 10%;
+    opacity: 0.9;
 
 
 }
 
-.column1 {
-    width: 100%;
 
-}
-.logo{
-    width:100%;
-    height:100px;
-}
 .Middle-Container{
     z-index: 1;
-  
 
+}
+.Middle-ContainerBackDrop{
+
+    background: white;
+    position: absolute;
+    margin-left: 0%;
     
+    width: 100%;
+ 
+    /* transform: rotate(25deg); */
+    z-index: -1;
+    display: inline-block;
+    margin-top: 10%;
+    opacity: 0.9;
 
 }
 .container-m{
     padding-top:5% ;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Qwitcher Grypen', cursive;
 }
 .btn{
     margin-top: 10%;
 }
-.Bottom-Container{
-    margin-top: 100px;
-    padding-top:5%;
-    padding-bottom: 5%;
-    background-color: #fff;;
-    width: 100%;
-  
- 
-    
- 
-}
-.carousel-inner{
-    text-align: center;
-}
-.logo{
-    width:100%;
-}
-.corosel-img{
-    border-radius: 50%;
-    width:40%;
 
-}
-.corosel-item2 h3{
-    /* padding-top: 10%; */
-    padding-bottom: 8%;;
- 
-}
-.corosel-item2 p{
-    margin-bottom: 0px;
-    font-size: 4.0rem;
-    font-family: 'Qwitcher Grypen', cursive;
-    text-decoration: underline;
-}
 .greeting{
     text-align: left;
 }
@@ -132,96 +119,138 @@ a{
     }
     
 }
-.Footer{
-    text-align: center;
-    padding: 7% 15%;
-    z-index: 1;
-}
-.icons{
-    padding: 2%;;
-    z-index: 1;
-    color: white;
-}
-.icons:hover{
-    border-radius:10px;
-    color: black;
-    background-color: white;
-    width: 100px;
-}
-
-.dropdown-item:hover{
-    background-color: grey;
-}
-.monevourButton:hover{
-
-    background-color: #343a40;
-    
-}
-.skillsrow{
-    /* border:10px solid blue; */
-    width:100%;
-}
-.pressed{
-    background-color: #343a40 ;
-}
-
-.card{
-    border-radius:5px ;
-    color: black;
-    padding-top:15% ;
-}
-
-.card:hover{
-    background-color:  lightgrey;
-}
-/* .card p{
-  
-    font-size: 10rem;
-} */
 
 
-.card-title,.card-subtitle{
-    font-family: 'Qwitcher Grypen', cursive;
+.listParent{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
 
-}
-.card-text{
-    font-size: 1.2rem;
-   
-}
-.corosel-slide{
-
-    width:100%;
-
-
-}
-.corosel-item2 p{
-
-    font-size: 1.5rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-.card-body{
-    height:250px;
-}
-
-.underline{
-    border:1px dotted white;
- 
 }
 
 
-h3{
-    text-align: center;
-    padding-bottom: 10px;
+
+
+  /*
+    Auther: Abdelrhman Said
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
-.card-img-top{
-    text-align: center;
-    width:100%
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  position: relative;
+
 }
 
-.BackgroundTest{
-    background-color: red;;
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+
+
+
+
+
 
